@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,7 +48,7 @@
                                 <rect key="frame" x="178" y="295" width="184" height="30"/>
                                 <state key="normal" title="Attempt Custom Transition"/>
                                 <connections>
-                                    <segue destination="ezz-V8-IyA" kind="presentation" id="MuC-OL-s0R"/>
+                                    <segue destination="ezz-V8-IyA" kind="presentation" modalPresentationStyle="fullScreen" id="MuC-OL-s0R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,13 +67,13 @@
         <!--View Controller-->
         <scene sceneID="XLd-PR-OLH">
             <objects>
-                <viewController id="ezz-V8-IyA" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ezz-V8-IyA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b4Q-z2-vsF">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presented From Form Sheet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yse-2p-qUG">
-                                <rect key="frame" x="248.5" y="481.5" width="215" height="21"/>
+                                <rect key="frame" x="276.5" y="501.5" width="215" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
